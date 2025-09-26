@@ -1,24 +1,31 @@
 # p039-numeros-romanos.py
-# Solicita un numero entre 1 y 10 y mostrarlo en numeros romanos
+# Convertir un número entero a número romano
 
-numero = int(input("Ingresa un numero entre 1 y 10: "))
+print("Dame un numero entero entre 1 y 10:")
 
-romanos = {
-    1: "I",
-    2: "II",
-    3: "III",
-    4: "IV",
-    5: "V",
-    6: "VI",
-    7: "VII",
-    8: "VIII",
-    9: "IX",
-    10: "X"
-}
+num = int(input())
 
-if numero in romanos:
-    print(romanos[numero])
+if num == 1:
+    print(f"El numero {num} equivale a I en numero romano")
+elif num == 2:
+    print(f"El numero {num} equivale a II en numero romano")
+elif num == 3:
+    print(f"El numero {num} equivale a III en numero romano")
+elif num == 4:
+    print(f"El numero {num} equivale a IV en numero romano")
+elif num == 5:
+    print(f"El numero {num} equivale a V en numero romano")
+elif num == 6:
+    print(f"El numero {num} equivale a VI en numero romano")
+elif num == 7:
+    print(f"El numero {num} equivale a VII en numero romano")
+elif num == 8:
+    print(f"El numero {num} equivale a VIII en numero romano")
+elif num == 9:
+    print(f"El numero {num} equivale a IX en numero romano")
+elif num == 10:
+    print(f"El numero {num} equivale a X en numero romano")
 else:
-    print("Error: Numero inválido.")
+    print("Error: el numero debe estar entre 1 y 10.")
 
-print("\nPrograma terminado")
+print("\n Programa terminado")

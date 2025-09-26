@@ -1,15 +1,18 @@
 # p042-precio-entrada-cine.py
 # Determinar el precio de una entrada segun la edad del cliente para el cine
 
-edad = int(input("Ingresa tu edad: "))
+print("Taquilla Cine")
+edad = int(input("Ingrese su edad: "))
 
 if edad < 5:
-    print("Tu entrada es gratis.")
+    print("Entrada gratis")
 elif edad <= 12:
-    print("El precio de tu entrada es de $5.")
-elif edad <= 64:
-    print("El precio de tu entrada es de $10.")
+    print("El precio de la entrada es $50")
+elif edad <= 17:
+    print("El precio de la entrada es $70")
+elif edad <= 59:
+    print("El precio de la entrada es $100")
 else:
-    print("El precio de tu entrada es de $7.")
+    print("El precio de la entrada es $60 (descuento para adultos mayores)")
 
 print("\nPrograma terminado")

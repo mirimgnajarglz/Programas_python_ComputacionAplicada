@@ -1,12 +1,18 @@
 # p037-numero-mayor.py
-# Solicita tres números al usuario para saber cual es mayor
+# Determinar el numero mayor de tres numeros
 
-num1 = int(input("Ingresa el primer numero: "))
-num2 = int(input("Ingresa el segundo numero: "))
-num3 = int(input("Ingresa el tercer numero: "))
+print('Determina el numero mayor de una serie de tres numeros')
+print('Dame 3 números enteros separados por espacio:')
 
-mayor = max(num1, num2, num3)
+n1, n2, n3 = input().split()
 
-print(f"El numero mayor es {mayor}.")
+n1, n2, n3 = int(n1), int(n2), int(n3)
 
-print("\nPrograma terminado")
+if((n1 > n2) and (n1 > n3)):
+    print(f'El numero mayor es: {n1}')
+elif((n2 > n1) and (n2 > n3)):
+    print(f'El numero mayor es: {n2}')
+else:
+    print(f'El numero mayor es: {n3}')
+    
+print ("\nPrograma terminado")

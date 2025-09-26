@@ -1,13 +1,24 @@
 # p038-dia-semana.py
-# Solicitar un numero del 1 al 7 y mostrar el dia de la semana 
+# Dias de la semana
 
-numero = int(input("Ingresa un numero del 1 al 7: "))
+print('Ingresa un numero del 1 al 7 donde 1 es domingo y 7 es sabado')
+numero= int(input())
 
-dias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"]
-
-if 1 <= numero <= 7:
-    print(dias[numero - 1])
+if(numero == 1):
+    print('Domingo')
+elif(numero == 2):
+    print('Lunes')
+elif(numero == 3):
+    print('Martes')
+elif(numero == 4):
+    print('Miercoles')
+elif(numero == 5):
+    print('Jueves')
+elif(numero == 6):
+    print('Viernes')
+elif(numero == 7):
+    print('Sabado')
 else:
-    print("Error: Dia invalido")
+    print('Error. Dia invalido.')
 
 print("\nPrograma terminado")

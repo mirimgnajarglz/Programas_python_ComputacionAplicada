@@ -1,24 +1,27 @@
 # p041-aceptar-estudiante-V2.py
 # Solicita los datos del aspirante
 
-nombre = input("Nombre: ")
-sexo = input("Sexo (h/m): ").lower()
-edad = int(input("Edad: "))
+print("Proceso de admisión")
 
-calificaciones = []
-for i in range(3):
-    nota = float(input(f"Calificacion #{i+1}: "))
-    calificaciones.append(nota)
+nombre = input("Ingrese su nombre: ")
+sexo = input("Ingrese su sexo (h/m): ").lower()
+edad = int(input("Ingrese su edad: "))
 
-promedio = sum(calificaciones) / len(calificaciones)
+print("\nIngrese sus 3 calificaciones:")
+c1 = float(input("Calificación 1: "))
+c2 = float(input("Calificación 2: "))
+c3 = float(input("Calificación 3: "))
 
+promedio = (c1 + c2 + c3) / 3
+
+print(f"\nResultado para {nombre}:")
 if sexo != "m":
-    print(f"Lo sentimos, {nombre}. La universidad solo acepta mujeres.")
+    print("Rechazado: la universidad solo acepta mujeres")
 elif edad <= 21:
-    print(f"Lo sentimos, {nombre}. No cumples con la edad requerida (mayores de 21 años).")
-elif not (8 <= promedio <= 9.5):
-    print(f"Lo sentimos, {nombre}. Tu promedio de {promedio:.2f} no alcanza el mínimo requerido de 8.")
+    print("Rechazado: debe ser mayor de 21 años")
+elif promedio < 8 or promedio > 9.5:
+    print(f"Rechazado: el promedio {promedio:.2f} no está en el rango permitido")
 else:
-    print(f"¡Felicidades, {nombre}! Has sido aceptada. Cumples con la edad y tu promedio de {promedio:.2f} está dentro del rango permitido.")
+    print(f"Aceptada: ¡Felicidades {nombre}! Cumples con todos los requisitos")
 
 print("\nPrograma terminado")
