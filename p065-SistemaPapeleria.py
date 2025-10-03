@@ -5,7 +5,7 @@ Autor: Miriam Gabriela Gonzalez Najar
 # Fecha: 2/10/2025
 """""
 print('\033[H\033[J')
-
+      
 ventas = cantidad = subtotal = 0
 total_c = total_o = total_d = total_p = 0
 
