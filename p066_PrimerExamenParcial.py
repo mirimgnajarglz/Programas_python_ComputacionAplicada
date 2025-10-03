@@ -2,7 +2,7 @@
 
 """
 Objetivo: [Programa que administra la venta de boletos]
-Nombre del Alumno: [Miriam Gabriela Gonzalez Najar]
+Nombre del Alumno: Miriam Gabriela Gonzalez Najar
 Matrícula: [34152160]
 Materia: Computación Aplicada
 Examen: Primer Parcial
