@@ -1,7 +1,7 @@
 """""
 p065-sistemapapeleria.py
 Programa para calcular las ventas de una papeleria
-Autor: Juan Diego De Avila Velazquez
+Autor: Miriam Gabriela Gonzalez Najar
 # Fecha: 2/10/2025
 """""
 print('\033[H\033[J')

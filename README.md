@@ -88,3 +88,6 @@
 
 ## Actividad 8 Problema de repaso - Parcial 1
 - p065-SistemaPapeleria.py
+
+## Primer examen parcial
+- p066_PrimerExamenParcial.py
