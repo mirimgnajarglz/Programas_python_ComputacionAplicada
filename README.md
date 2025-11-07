@@ -167,3 +167,6 @@
 ## Actividad 15 - Conjuntos
 - p121-municipios.py
 - p122-operaciones-conjuntos.py
+
+## Segundo Examen Parcial
+- p125-segundo-examen-parcial.py
